@@ -1,0 +1,74 @@
+﻿<Window x:Class="Zadanie4_BindingXML.SubcategoryWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Zadanie4_BindingXML"
+        mc:Ignorable="d"
+        Title="SubcategoryWindow" Height="800" Width="400">
+    <Grid>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.1*"/>
+                <RowDefinition Height="0.1*"/>
+                <RowDefinition/>
+                <RowDefinition Height="0.15*"/>
+            </Grid.RowDefinitions>
+
+            <Label FontSize="30"
+               FontWeight="Bold"
+               Content="{Binding XPath=Name}"
+               HorizontalAlignment="Center"
+               VerticalAlignment="Center"
+               Grid.Row="0"/>
+            <Label FontSize="20"
+               FontWeight="DemiBold"
+               Content="{Binding XPath=Description}"
+               HorizontalAlignment="Center"
+               VerticalAlignment="Top"
+               Grid.Row="1"/>
+
+            <ListView
+                  ItemsSource="{Binding XPath=CarBrands/CarBrand}"
+                  HorizontalContentAlignment="Stretch"
+                  Grid.Row="2"
+                  PreviewMouseLeftButtonUp="GetCurrentItem">
+                <ListView.ItemTemplate>
+                    <DataTemplate >
+                        <Border Name="border" BorderBrush="DarkGray" BorderThickness="1"
+                    Padding="5" Margin="5">
+                            <Grid Margin="5">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition/>
+                                    <RowDefinition/>
+                                    <RowDefinition/>
+                                    <RowDefinition/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                </Grid.ColumnDefinitions>
+
+                                <TextBlock Grid.Row="0" Text="Nazwa:"/>
+                                <TextBlock Grid.Row="1" Text="Opis:"/>
+                                <TextBlock Grid.Row="2" Text="Rok założenia"/>
+                                <TextBlock Grid.Row="3" Text="Koncern:"/>
+                                
+                                <TextBlock Grid.Row="0" Grid.Column="1" Text="{Binding XPath=Name}"/>
+                                <TextBlock Grid.Row="1" Grid.Column="1" Text="{Binding XPath=Description}"/>
+                                <TextBlock Grid.Row="2" Grid.Column="1" Text="{Binding XPath=EstablishmentYear}"/>
+                                <TextBlock Grid.Row="3" Grid.Column="1" Text="{Binding XPath=ParentConcern}"/>
+
+                            </Grid>
+                        </Border>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+            <Button Grid.Row="3"
+                Content="Otwórz kategorię"    
+                Click="OpenCategory"
+                Style="{StaticResource buttonStyle}"/>
+        </Grid>
+    </Grid>
+</Window>

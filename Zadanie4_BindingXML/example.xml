@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Cars xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CarCategories>
+    <CarCategory>
+      <Name>Samochody osobowe</Name>
+      <Description>Opis samochodów osobowych</Description>
+      <CarBrands>
+        <CarBrand>
+          <Name>Opel</Name>
+          <Description>Opis dla marki Opel</Description>
+          <EstablishmentYear>1862-01-21T00:00:00</EstablishmentYear>
+          <ParentConcern>Stellantis</ParentConcern>
+          <CarModels>
+            <CarModel>
+              <Name>Corsa</Name>
+              <ProductionYear>1993</ProductionYear>
+              <EngineCompacity>1.4</EngineCompacity>
+              <DriveType>FWD</DriveType>
+            </CarModel>
+            <CarModel>
+              <Name>Astra</Name>
+              <ProductionYear>1991</ProductionYear>
+              <EngineCompacity>1.4</EngineCompacity>
+              <DriveType>FWD</DriveType>
+            </CarModel>
+          </CarModels>
+        </CarBrand>
+        <CarBrand>
+          <Name>BMW</Name>
+          <Description>Opis dla marki BMW</Description>
+          <EstablishmentYear>1916-03-07T00:00:00</EstablishmentYear>
+          <ParentConcern>BMW</ParentConcern>
+          <CarModels>
+            <CarModel>
+              <Name>E36</Name>
+              <ProductionYear>1993</ProductionYear>
+              <EngineCompacity>1.6</EngineCompacity>
+              <DriveType>RWD</DriveType>
+            </CarModel>
+            <CarModel>
+              <Name>E46</Name>
+              <ProductionYear>2000</ProductionYear>
+              <EngineCompacity>1.6</EngineCompacity>
+              <DriveType>RWD</DriveType>
+            </CarModel>
+          </CarModels>
+        </CarBrand>
+      </CarBrands>
+    </CarCategory>
+    <CarCategory>
+      <Name>Samochody ciężarowe</Name>
+      <Description>Opis samochodów ciężarowych</Description>
+      <CarBrands>
+        <CarBrand>
+          <Name>MAN</Name>
+          <Description>Opis dla marki MAN</Description>
+          <EstablishmentYear>1758-01-01T00:00:00</EstablishmentYear>
+          <ParentConcern>MAN</ParentConcern>
+          <CarModels>
+            <CarModel>
+              <Name>MAN TGA</Name>
+              <ProductionYear>2000</ProductionYear>
+              <EngineCompacity>10.518</EngineCompacity>
+              <DriveType>NaN</DriveType>
+            </CarModel>
+            <CarModel>
+              <Name>MAN TGL</Name>
+              <ProductionYear>2005</ProductionYear>
+              <EngineCompacity>6.87</EngineCompacity>
+              <DriveType>NaN</DriveType>
+            </CarModel>
+          </CarModels>
+        </CarBrand>
+        <CarBrand>
+          <Name>Volvo Trucks</Name>
+          <Description>Opis dla marki Volvo</Description>
+          <EstablishmentYear>1928-01-01T00:00:00</EstablishmentYear>
+          <ParentConcern>Volvo</ParentConcern>
+          <CarModels>
+            <CarModel>
+              <Name>Volvo FH12</Name>
+              <ProductionYear>1993</ProductionYear>
+              <EngineCompacity>12.1</EngineCompacity>
+              <DriveType>NaN</DriveType>
+            </CarModel>
+            <CarModel>
+              <Name>Volvo FH16</Name>
+              <ProductionYear>1993</ProductionYear>
+              <EngineCompacity>12.1</EngineCompacity>
+              <DriveType>NaN</DriveType>
+            </CarModel>
+          </CarModels>
+        </CarBrand>
+      </CarBrands>
+    </CarCategory>
+    <CarCategory>
+      <Name>Motory</Name>
+      <Description>Opis motorów</Description>
+      <CarBrands>
+        <CarBrand>
+          <Name>Yamaha</Name>
+          <Description>Opis dla marki Yamaha</Description>
+          <EstablishmentYear>1887-10-12T00:00:00</EstablishmentYear>
+          <ParentConcern>Yamaha Group</ParentConcern>
+          <CarModels>
+            <CarModel>
+              <Name>Yamaha TZR 50</Name>
+              <ProductionYear>1990</ProductionYear>
+              <EngineCompacity>50</EngineCompacity>
+              <DriveType>NaN</DriveType>
+            </CarModel>
+            <CarModel>
+              <Name>Yamaha YZF-R1</Name>
+              <ProductionYear>1997</ProductionYear>
+              <EngineCompacity>1</EngineCompacity>
+              <DriveType>NaN</DriveType>
+            </CarModel>
+          </CarModels>
+        </CarBrand>
+      </CarBrands>
+    </CarCategory>
+  </CarCategories>
+</Cars>
